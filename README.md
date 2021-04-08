@@ -1,6 +1,8 @@
 # Phân tích dữ liệu về tai nạn giao thông
----
+
 Đây là đồ án cuối kỳ của môn học Phân tích dữ liệu thông minh. Yêu cầu: phân tích dữ liệu bất kỳ về tai nạn giao thông và thu được các insight quan trọng từ dữ liệu ấy.
+
+---
 
 ## Thông tin nhóm
 - STT nhóm: 1

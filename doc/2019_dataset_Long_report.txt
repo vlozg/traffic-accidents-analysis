@@ -32,30 +32,34 @@ Vehicle.CSV: thông tin liên quan đến xe và thông tin cụ thể liên qua
 	- Thông tin về phần đường nơi xe này gây tai nạn.
 	- Thông tin các tác nhân có thể gây ra tai nạn qua bộ nhận diện hay cảm biến cũng như hành vi của tài xế trước tai nạn.
 
-ACC_AUX.csv:
-CEvents.CSV:
-Damage.CSV:
-Distract.CSV:
-DrImpair.CSV:
-Drugs.CSV:
-Factor.CSV:
-Maneuver.CSV:
-MIACC.csv:
-MIDRVACC.csv:
-MIPER.csv:
-NMCrash.CSV:
-NMDistract.CSV
-NMImpair.CSV
-NMPrior.CSV
-Parkwork.CSV
-PBType.CSV
-PER_AUX.csv
-Person.CSV
-Race.CSV
-SafetyEq.CSV
-VEH_AUX.csv
+Person.CSV: thông tin liên quan những người có trong tai nạn, chẳng hạn như:
+	- (Chú ý) Do một vụ tai nạn có thể có nhiều người liên quan và mỗi xe có thể có nhiều người ngồi nên xác định mẫu cần thêm khóa là VEH_NO và PER_NO.
+	- (Chú ý) Một số thuộc tính ở đầu có xuất hiện từ dữ liệu xe (chẳng hạn thông tin model xe), cần chú ý tránh hoang mang (Những thông tin được mô tả trong file tới tận cột AT mới xuất hiện).
+	- Thông tin cơ bản: tuổi, giới tính, sắc tộc,...
+	- Loại người: tài xế, hành khách, người đi bộ, người đi xe đạp,...
+	- Mức độ tai nạn.
+	- Vị trí chỗ ngồi trên xe, thiết bị bảo hộ sử dụng (dây đai, mũ bảo hiểm, túi hơi,...) và có sử dụng đúng cách không,...
+	- Tình trạng văng khỏi phương tiện, có cần dụng cụ giải cứu khỏi mắc kẹt,...
+	- Thông tin về nồng độ cồn, chơi đồ và bài test liên quan (loại test, kết quả,...)
+	- Tình trạng cấp cứu, sống/chết và ngày chết và thời gian lag (do FARS chắc chắn mỗi tai nạn đều có thương vong)
+	- Thông tin bổ sung về người trên xe ngoại trừ tài xế.
+	- Có đang ở nơi làm việc lúc tai nạn?
 
-VEvent.CSV
-Violatn.CSV
-Vision.CSV
-VSOE.CSV
+Parkwork.CSV: chứa thông tin các xe được đỗ và xe công vụ (?), chẳng hạn như:
+	- (Chú ý) Hầu hết thông tin ở đây đều có trong file accident và vehicle.
+	- "This data element also appears in the Vehicle data file as UNITTYPE. 
+The only valid attribute for UNITTYPE is 1 (Motor Vehicle in Transport (Inside or Outside the 
+Trafficway))."
+===> NÊN BỎ FILE NÀY VÌ TRÙNG LẮP THÔNG TIN!!! (File vehicle có 51k nhưng file này chỉ có 1k3 xe thôi)
+
+-----------CÁC FILE BỔ SUNG-----------
+
+ACC_AUX.csv: file chứa các thuộc tính suy diễn bổ sung giúp thuận tiện cho quá trình phân tích, chẳng hạn:
+	- Các thuộc tính cho biết có người trẻ tuổi, người mơ ngủ, người đi bộ dính líu.
+	(có thể suy diễn thủ công bằng bảng accident và person).
+
+VEH_AUX.csv: như trên nhưng về cơ bản thì không thấy thông tin suy diễn quan trọng lắm trong này vì có cảm giác chỉ lấy từ file vehicle thôi.
+
+PER_AUX.csv: như trên nhưng có phần hay ho là race chuyển sang format sắc tộc (đen, tráng, bla bla)
+Còn về age group thì 9 age group là 9 format tuổi thôi, không quan trọng
+=> Bỏ

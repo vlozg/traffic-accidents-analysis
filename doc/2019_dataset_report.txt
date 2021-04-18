@@ -1,0 +1,61 @@
+Thuộc tính khóa xuất hiện tại hầu hết file:
+- STATE: đánh số bang nơi xảy ra tai nạn (01-56, xem thêm file)
+- ST_CASE (khóa chính): 6 số để đánh dấu case.
+	2 số đầu là stt bang.
+	4 số sau là stt case.
+- VEH_NO: đánh stt cho phương tiện xuất hiện trong tai nạn.
+	VEH_NO = 0 tức không sở hữu xe.
+- PER_NO: đánh số người xuất hiện trong tai nạn (chủ xe, người qua đường hoặc người không chạy xe)
+	Đánh số song song bắt đầu từ 1 cho 2 loại: người sở hữu xe và không sở hữu xe.
+- EVENTNUM: đánh số event trong tai nạn, thứ tự thời gian.
+- VEVENTNUM: đánh số event xảy đến với phương tiện.
+
+accident.CSV: thông tin về tai nạn và đoạn đường nơi xảy ra tai nạn, chẳng hạn như:
+	- Số người liên quan có nộp form về tai nạn này.
+	- Ngày giờ xảy ra tai nạn, thời tiết lúc tai nạn.
+	- Thông tin đoạn đường, chức năng, đơn vị sở hữu và tọa độ vệ tinh nơi xảy ra tai nạn.
+	- Thông tin mô tả phân loại tai nạn, hướng tai nạn.
+	- Các yếu tố ngoại cảnh liên quan.
+	- Thời gian nhận thông báo, thời gian cấp cứu và số thương vong.
+
+Vehicle.CSV: thông tin liên quan đến xe và thông tin cụ thể liên quan đến xe trong tai nạn, chẳng hạn như:
+	- (Chú ý) Do một vụ tai nạn có thể có nhiều xe liên quan nên xác định mẫu cần thêm khóa là VEH_NO.
+	- Số người trên xe.
+	- Thông tin xe như hãng sx, model, biển số xe, nơi đăng ký, loại xe, kiểu xe, chủ xe,...
+	- Thông tin cho một số loại xe đặc biệt như xe có đang thi hành nhiệm vụ khuẩn, xe bus gì, xe tải có bị xoay đầu xe lúc tai nạn, xe có chở hóa chất độc hại,...
+	- Các thông tin liên qua đến tai nạn như: xe có lật/xoay, hướng chạm xoay, xe tông xuống gầm xe khác, hướng va chạm gây tai nạn đầu tiên, thiệt hại đến xe, có cháy nổ,...
+	- Chủ xe có bỏ trốn sau tai nạn?...
+	- Sự cố gây thiệt hại lớn nhất (cháy nổ, người đi bộ,...)
+	- Các thông tin thêm về tình trạng xe mô tả sự cố.
+	- Thông tin về tài xế như chiều cao, cân nặng, tình trạng bằng lái,...
+	- Thông tin tiền án của tài xế.
+	- Thông tin về phần đường nơi xe này gây tai nạn.
+	- Thông tin các tác nhân có thể gây ra tai nạn qua bộ nhận diện hay cảm biến cũng như hành vi của tài xế trước tai nạn.
+
+ACC_AUX.csv:
+CEvents.CSV:
+Damage.CSV:
+Distract.CSV:
+DrImpair.CSV:
+Drugs.CSV:
+Factor.CSV:
+Maneuver.CSV:
+MIACC.csv:
+MIDRVACC.csv:
+MIPER.csv:
+NMCrash.CSV:
+NMDistract.CSV
+NMImpair.CSV
+NMPrior.CSV
+Parkwork.CSV
+PBType.CSV
+PER_AUX.csv
+Person.CSV
+Race.CSV
+SafetyEq.CSV
+VEH_AUX.csv
+
+VEvent.CSV
+Violatn.CSV
+Vision.CSV
+VSOE.CSV

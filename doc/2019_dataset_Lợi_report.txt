@@ -17,9 +17,11 @@ pbtype.csv: Thông tin về tai nạn giữa người điều khiển xe máy(xe
 	- PEDCGP: gom nhóm dưaj trên nguyeen nhân tai nạn người đi bộ
 	- BIKECGP:  gom nhóm dưaj trên nguyeen nhân tai nạn người đi xe đạp
 CEvents.csv: chứa thông tin vụ việc xảy ra tai nạn và vùng va chạm ở 2 xe theo thứ tự thời gian (1 case có nhiều vụ việc xảy ra dẫn đến tai nạn) từ phía 2 xe
+VD: xe A trượt bánh sang phải, Xe B từ bên phải quẹo qua r tông nhau
 khá phức tạp để ứng dụng phân tích không đề nghị sử dụng
 
 VEvents.csv: chứa thông tin sự việc va chạm xảy ra trên đường giao thông từ phía 2 xe
+VD: xe A trượt bánh sang phải, Xe B từ bên phải quẹo qua r tông nhau
 khá phức tạp để ứng dụng phân tích không đề nghị sử dụng
 
 VSOE.csv: bản đơn giản hóa của VEvents.csv bớt đi sự thừa thải so vs VEvents.csv

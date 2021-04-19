@@ -1,0 +1,30 @@
+Định nghĩa
+
+Thông tin về các sự ức chế (làm suy yếu) tài xế được luật công nhận
+30k/51k dòng có dữ liệu (23k dòng điệu kiện bình thường)
+Mỗi dòng ứng với 1 tài xế 
+ST_Case: ID vụ tai nạn
+VEH_NO: chiếc thứ i trong vụ tai nạn
+DRIMPAIR: Mã của yếu tố ức chế (1-99)
+DRIMPAIR:
+
+      2011-  2014-  2018- 
+2010  2013   2016   2017  Later
+ 0      0      0      0      0       None/Apparently Normal
+ 1      1      1      1      1       Ill, Blackout : Ill(?), mất điện
+ 2      2      2      2      2       Asleep or Fatigued : buồn ngủ hoặc mệt mỏi
+ 3      3      --      --    --      Walking with a Cane or Crutches : chống gậy hoặc nạng
+--      --     3      3      3       Walking with a Cane or Crutches, etc. //
+ 4      4      4      --     --      Paraplegic or Restricted to Wheelchair : bị liệt hoặc bị hạn chế xe lăn
+--      --     --     4      4       Paraplegic or in a Wheelchair : bị liệt hoặc ngồi trên xe lăn
+ 5      5      5      5      5       Impaired Due to Previous Injury : chấn thương từ trước
+ 6      6      6      6      6       Deaf : điếc
+ 7      7      7      7      7       Blind : mù
+ 8      8      8      8      8       Emotional (Depressed, Angry, Disturbed, etc.) : cảm xúc (trầm cảm ,giận, bị làm phiền)
+ 9      9      9      9      9       Under the Influence of Alcohol, Drugs or Medication : rượu, thuốc(lắc, ma túy), thuốc(y học)
+10      10     10     10     10      Physical Impairment – No Details : ức chế vật lý không thông tin
+--      95     95     95     95      No Driver Present/Unknown if Driver Present : không có hiện diện người lái
+96      96     96     96     96      Other Physical Impairment : các ức chế vật lý khác
+98      98     98     98     98      Not Reported : không báo cáo 
+99      99     99     99     --      Unknown if Impaired : không biết nếu có ức chế hay không
+--      --      --    --     99      Reported as Unknown if Impaired :

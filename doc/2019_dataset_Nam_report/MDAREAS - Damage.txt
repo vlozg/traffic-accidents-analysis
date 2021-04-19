@@ -1,0 +1,14 @@
+Định nghĩa
+
+Data này xác định tất cả các khu vực bị tổn hại trên phương tiện dựa theo dữ liệu của tai nạn
+Mỗi dòng tương ứng một phần tổn hại
+205242 dòng hoặc hơn
+ 
+ST_Case: ID vụ tai nạn
+VEH_NO: chiếc thứ i trong vụ tai nạn
+MDAREAS: Vị trí tổn hại
+1-12 : theo hướng kim đồng hộ
+13: top (có vẻ là nóc)
+14: gầm
+15: không tổn hại
+99: vùng tổn hại không rõ

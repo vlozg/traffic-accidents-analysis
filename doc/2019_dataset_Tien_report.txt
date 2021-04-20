@@ -1,0 +1,33 @@
+NMPrior.CSV
+	STATE,STATENAME,ST_CASE,VEH_NO,PER_NO,MPR_ACT,MPR_ACTNAME
+	Diễn tả hành động của từng non-motorist (nên cột VEH_NO là 0 hết): đánh mã bởi cột MPR_ACT và giải thích ở cột MPR_ACTNAME.
+	Có khoảng 20 hành động đc đánh mã.
+	Khóa là ST_CASE, PER_NO, MPR_ACT => một người có thể có nhiều hành động.
+	Ví dụ:
+		đi đến trường/ từ trường về
+		đứng chờ ở giao lộ
+		băng qua giao lộ
+		...
+
+SafetyEq.CSV
+	STATE,STATENAME,ST_CASE,VEH_NO,PER_NO,NMHELMET,NMHELMETNAME,NMPROPAD,NMPROPADNAME,NMOTHPRO,NMOTHPRONAME,NMREFCLO,NMREFCLONAME,NMLIGHT,NMLIGHTNAME,NMOTHPRE,NMOTHPRENAME
+	Miêu tả các phương tiện bảo hộ của từng non-motorist (cột VEH_NO cũng là 0 luôn).
+	Ví dụ: helmet, tấm lót khuỷu tay-chân, đồ phản quang, đèn,... 
+	Cái khóa MSAFEQMT miêu tả trong manual mà ko thấy trong file nữa :<
+
+Drugs.CSV
+	STATE,STATENAME,ST_CASE,VEH_NO,PER_NO,DRUGSPEC,DRUGSPECNAME,DRUGRES,DRUGRESNAME
+	Miêu tả tình trạng sử dụng thuốc của người liên quan (cả motor và non-motor)
+	DRUGSPEC là loại test được sử dụng (máu, nước tiểu, huyết tương, cục máu đông, nước bọt, gan, tinh dịch)
+	DRUGRES là kết quả test: có dùng thuốc mê, an thần, ma túy, kích thích,...
+	Một người có thể dùng nhiều thuốc.
+
+Race.CSV
+	STATE,STATENAME,ST_CASE,VEH_NO,PER_NO,RACE,RACENAME,ORDER,MULTRACE
+	Thông tin sắc tộc của từng người (da trắng, da đen, Nam Mỹ, xong lại có cả TQ NB VN..., ko hiểu sao lại kể riêng vậy, hay tại mấy đứa VN tông nhau nhiều :v )
+	Một người có thể đa sắc tộc.
+
+VINDECODE.CSV
+	Cái file này ko có trong 23 file tải về ??
+	File này lưu thông tin chi tiết (specification) của từng loại xe.
+	

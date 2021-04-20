@@ -1,0 +1,39 @@
+pbtype.csv: Thông tin về tai nạn giữa người điều khiển xe máy(xe có động cơ máy) và người đi bộ hoặc giữa người lái xe lớn(xe chở hàng container các kiểu) và người đi xe đạp
+	- ST_CASE, VEH_NO và PER_NO là thuộc tính định danh độc nhất. ST_CASE nên được dùng để merge file Pbtype với các file Accident.
+	- PBCWALK: có vạch qua đường nơi xảy ra tai nạn không
+	- PBSWALK: có vỉa hè nơi xảy ra tai nạn không
+	- PBSZONE: tai nạn có xảy ra trong khu trường học không
+	- PEDCTYPE: Nguyên nhân xảy ra tai nạn cho người đi bộ(nếu là người đi bộ)
+	- BIKECTYPE:  Nguyên nhân xảy ra tai nạn cho người đi xe đạp(nếu là người đi xe đạp)
+	- PEDLOC: vị trí xảy ra tai nạn người đi bộ so với ngã giao gần đó
+	- BIKELOC: vị trí xảy ra tai nạn người đi xe đạp so với ngã giao gần đó
+	- PEDPOS: vị trí xảy ra tai nạn người đi bộ trên đường (khu ngã giao, khu qua đường, đường xe chạy, lane xe đạp,...)
+	- BIKEPOS: vị trí xảy ra tai nạn người đi xe đạp trên đường (khu ngã giao, khu qua đường, đường xe chạy, lane xe đạp,...)
+	- PEDDIR: hướng di chuyển của người đi bộ trước khi tai nạn xảy ra
+	- BIKEDIR: hướng di chuyển của người đi xe đạp trước khi tai nạn xảy ra
+	- MOTDIR: hướng di chuyển của người điều khiển xe máy trước khi tai nạn xảy ra
+	- MOTMAN: hành động quẹo xe của ng điều khiển xe máy tại thời điểm tai nạn(liên quan đến người đi bộ) xảy ra
+	- PEDSNR: vị trí và hướng di chuyển của ng điều khiển xe máy và ng đi bộ tại giao vực
+	- PEDCGP: gom nhóm dưaj trên nguyeen nhân tai nạn người đi bộ
+	- BIKECGP:  gom nhóm dưaj trên nguyeen nhân tai nạn người đi xe đạp
+CEvents.csv: chứa thông tin vụ việc xảy ra tai nạn và vùng va chạm ở 2 xe theo thứ tự thời gian (1 case có nhiều vụ việc xảy ra dẫn đến tai nạn) từ phía 2 xe
+VD: xe A trượt bánh sang phải, Xe B từ bên phải quẹo qua r tông nhau
+khá phức tạp để ứng dụng phân tích không đề nghị sử dụng
+
+VEvents.csv: chứa thông tin sự việc va chạm xảy ra trên đường giao thông từ phía 2 xe
+VD: xe A trượt bánh sang phải, Xe B từ bên phải quẹo qua r tông nhau
+khá phức tạp để ứng dụng phân tích không đề nghị sử dụng
+
+VSOE.csv: bản đơn giản hóa của VEvents.csv bớt đi sự thừa thải so vs VEvents.csv
+
+
+
+
+
+
+
+
+
+
+
+

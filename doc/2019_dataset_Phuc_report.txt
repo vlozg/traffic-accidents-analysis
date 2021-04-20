@@ -1,0 +1,29 @@
+VIOLATN
+
+	- ST_CASE và VEH_NO dùng để merge violatin với file vehicle
+	- MVIOLATN: Xác định các vi phạm như: không có, giết người, reckless, có chủ ý,... đua xe, speeding, ko vượt đèn,... Một xe vẫn có thể vi phạm nhiều thứ.
+	- Nhãn trên có rất nhiều thuộc tính category (99 cái). Nếu muốn phân loại có thể chia vào nhóm vi phạm như: có chủ đích, xay xỉn, tín hiệu đèn,... Người ta cũng đã có chia sẵn trong file.
+	- Một số hướng: trong các vụ án chết người thì đa phần vi phạm thuộc loại gì?
+	- Loại vi phạm nào phổ biến nhất, gây chết nhiều nhất. Các giải pháp tránh các loại vi phạm trên? Phân bố các loại vi phạm theo từng state. Giả thiết: vi phạm về speeding xuất hiện nhiều hơn vào buổi tối hoặc ở state nào đó. Loại xe nào speeding nhiều nhất, loại xe nào thường ko có bằng lái nhất? Xe nào hay vi phạm nhất? Mối quan hệ giữa người vi phạm và tiền xử của họ (người có dùng bia rượu, bia thường vi phạm hơn?)
+	- Highly recommended
+
+VISION
+	ST_CASE, VEH_NO: Tham chiếu tới vehicle
+	MVISOBSC: Tầm nhìn driver bị chặn bởi cái gì? Mưa, sương mù, cát, chói mặt trời, cây, windshield hư
+	- Bỏ cái này, Ít thông tin, ko rút đc nhiều tri thức
+	- Có thể tìm mỗi quan hệ giữa môi trường và vị trí địa lý. Khu vực nhiều mưa, mùa mưa thì tai nạn có nhiều hơn không. Mưa, gió nắng có liên hệ gì với cách va chạm bị tai nạn không? Recommended
+
+NMCRASH
+	Hành động của non-mottorist mà đóng góp cho tai nạn
+	-ST_CASE, PER_NO tham chiếu
+	- Đi bộ ngược chiều, đi sai đường, vào ra xe ko đúng cách. Ko hay. Not reoommended
+
+NMDISTRACT
+	Các yếu tố gây phân tâm cho non-motorist. Do ăn/uống / bởi xe khác/ Day dream/ Trên ĐT,...
+	Dùng những cái khác như VIOLATION, rựu bia sẽ hay hơn. Not recommended
+
+NMIMPAIR
+	Khuyết tật đc tin là gây ảnh hưởng tới người
+	- ST_CASE, PER_NO : Tham chieu
+	- NMIMPAIR: buồn ngủ, mệt mỏi, thương tật, emotional, do thuốc, mù câm điếc,...
+	- Cùng lấm thì cũng chỉ rút ra được nhưng thông tin khá là meh như: ko lái xe khi mệt, tức giận,... Boring

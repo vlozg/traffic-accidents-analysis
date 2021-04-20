@@ -1,0 +1,38 @@
+Định nghĩa
+
+Thông tin về sự chú ý của tài xé trước khi nhận ra mối đe dọa, hoặc ngay trước khi va chạm nếu nhận ra sẽ không xảy ra va chạm
+28k/51k có dữ liệu (khác no report)
+Mỗi dòng ứng với 1 tài xế 
+ST_Case: ID vụ tai nạn
+VEH_NO: chiếc thứ i trong vụ tai nạn
+MDRDSTRD: Mã của yếu tố sao nhãng (1-99)
+MDRDSTRD
+
+2010- 2012- 2018- 
+2011  2017  Later
+  0     0     0 Not Distracted : không mấ tập trung
+  1     1    -- Looked But Did Not See : nhìn nhưng không thấy
+  3     3     3 By Other Occupant(s) : người khác trên xe
+  4     4     4 By a Moving Object in Vehicle : vật chuyển động trên phương tiện
+  5     5     5 While Talking or Listening to Mobile Phone : nói chuyện hoặc nghe điện thoại
+  6     6     6 While Manipulating Mobile Phone : nghịch điện thoại
+  7     7     7 While Adjusting Audio or Climate Controls : chỉnh nhạc, nhiệt độ
+  9     9     9 While Using Other Component/Controls Integral to Vehicle: sử dụng các thiệt bị khác tích hợp trên phương tiện
+ 10     10     10 While Using or Reaching For Device/Object Brought Into Vehicle: với lấy, sử dụng các thiệt bị khác mang lên trên phương tiện
+ 12     12     12 Distracted by Outside Person, Object or Event: người, sự vật, sử việc bên ngoài
+ 13     13     13 Eating or Drinking : đang ăn uống
+ 14     14     14 Smoking Related : liên quan tới hút thuốc
+ 15     15     15 Other Mobile Phone Related : các lý do khác liên quan tới điện thoại
+ 16     16     16 No Driver Present/Unknown if Driver Present : 
+ --     17     17 Distraction/Inattention : sao nhãng, không chú ý
+ --     18     18 Distraction/Careless : sao nhãng, bất cẩn
+ --     19     19 Careless/Inattentive  : sao nhãng, thiếu chú ý
+ 92     --     -- Distraction/Inattention, Details Unknown 
+ --     92     92 Distraction (Distracted), Details Unknown
+ --     93     93 Inattention (Inattentive), Details Unknown
+ 96     96     96 Not Reported : không có 
+ 97     --     -- Inattentive or Lost in Thought : thiếu chú ý, mải mê suy nghĩ
+ --     97     97 Lost In Thought/Day Dreaming : mải mê suy nghĩ, mơ ngày
+ 98     98     98 Other Distraction: nguyên do khác
+ 99     99     -- Unknown if Distracted  : không biết rằng mình sao nhãng
+ --     --     99 Reported as Unknown if Distracted : không biết

@@ -1,0 +1,34 @@
+Định nghĩa
+
+Các bộ phận xe bị khiếm khuyết hooạc tình trạng bảo trì có thể ảnh hưởng đến vụ va chạm
+Chỉ có 49k/50k dòng là có data (khác no report unknowns) (48k dòng là none - không khiếm khuyết)
+Mỗi dòng ứng với 1 tài xế 
+ST_Case: ID vụ tai nạn
+VEH_NO: chiếc thứ i trong vụ tai nạn
+MFACTOR: Mã của bộ phận xe (1-99)
+MFACTOR:
+
+ 2010- 2018- 
+ 2017 Later
+ 0 0 None
+ 1 1 Tires
+ 2 2 Brake System
+ 3 3 Steering : hệ thống lái
+ 4 4 Suspension : giảm sốc  
+ 5 5 Power Train : động cơ
+ 6 6 Exhaust System : hệ thống xả
+ 7 7 Head Lights
+ 8 8 Signal Lights
+ 9 9 Other Lights
+10 10 Wipers 
+11 11 Wheels
+12 12 Mirrors
+13 13 Windows/Windshield
+14 14 Body, Doors
+15 15 Truck Coupling / Trailer Hitch / Safety Chains : mối kéo rơ moóc
+16 16 Safety Systems 
+17 17 Vehicle Contributing Factors – No Details 
+97 97 Other
+98 98 Not Reported
+99 -- Unknown
+-- 99 Reported as Unknown

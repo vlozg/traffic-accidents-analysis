@@ -1,0 +1,23 @@
+Định nghĩa
+
+Thứ mà tài xế muốn tránh trước khai xảy ra va chạm
+16k/51k dòng khác not report, unknown
+Mỗi dòng ứng với 1 tài xế 
+ST_Case: ID vụ tai nạn
+VEH_NO: chiếc thứ i trong vụ tai nạn
+MDRMANAV: Mã của yếu tố (1-99)
+MDRMANAV:
+
+2010- 2018- 
+2017 Later
+ 0      0 Driver Did Not Maneuver To Avoid 
+ 1      1 Object
+ 2      2 Poor Road Conditions (Puddle, Ice, Pothole, etc.) : đường xấu (vũng nước, băng, ổ trâu)
+ 3      3 Live Animal
+ 4      4 Motor Vehicle
+ 5      5 Pedestrian, Pedalcyclist or Other Non-Motorist : người không lái xe (đi bộ, xe đạp)
+92      92 Phantom/Non-Contact Motor Vehicle : ảo ảnh (?), phương tiện không thể ra hiệu
+95      95 No Driver Present/Unknown if Driver Present
+98      98 Not Reported
+99      -- Unknown
+--      99 Reported as Unknown

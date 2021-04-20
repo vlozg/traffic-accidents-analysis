@@ -1,0 +1,2 @@
+Competition: https://www.kaggle.com/c/widsdatathon2021
+Referred notebook: https://www.kaggle.com/ruchi798/wids-datathon-2021-rapids-xgb-lightgbm
